@@ -1,15 +1,36 @@
 # contents of pyproject.toml
 
+[project.optional-dependencies]
+test = ["pytest"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
 name = "example-package-jgarciamesa"
-version = "0.1.0"
+dynamic = ["version"]
 dependencies = [
   "numpy"
 ]
+authors = [
+  { name="Juanjo Garcia Mesa" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload",
+]
+
+[tool.hatch]
+version.path = "src/example_package_jgarciamesa/__init__.py"
 
 [project.optional-dependencies]
 test = ["pytest"]
+
+[project.urls]
+"Source Code" = "https://github.com/jgarciamesa/example-package-jgarciamesa"
