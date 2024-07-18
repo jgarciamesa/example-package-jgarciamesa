@@ -10,6 +10,7 @@ build-backend = "hatchling.build"
 [project]
 name = "example-package-jgarciamesa"
 dynamic = ["version"]
+description = "example package for INTERSECT24"
 dependencies = [
   "numpy"
 ]
