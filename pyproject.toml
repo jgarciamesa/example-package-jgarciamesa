@@ -29,8 +29,5 @@ classifiers = [
 [tool.hatch]
 version.path = "src/example_package_jgarciamesa/__init__.py"
 
-[project.optional-dependencies]
-test = ["pytest"]
-
 [project.urls]
 "Source Code" = "https://github.com/jgarciamesa/example-package-jgarciamesa"
